@@ -1,24 +1,5 @@
 #include<stdio.h>
-
-double calculate(double number1, char operator, double number2){
-	switch(operator){
-		case '+':
-			return number1 + number2;
-		case '-': 
-			return number1 - number2;
-		case '*':
-			return number1 * number2;
-		case '/':
-			while(number2 == 0){
-				printf("Error: %lf", number2);
-				return 0;
-			}
-			number1 / number2;
-		default:
-			printf("Error: Invalid operator!");
-			return 0;	
-	}
-}
+#include "calculations/calculation.h"
 
 int main(){
 	double number1, number2, answer;
@@ -35,6 +16,6 @@ int main(){
 
 	answer = calculate(number1, operator, number2);
 
-	printf("equals: %lf \n", answer);
+	printf("equals: %0.2lf \n", answer);
 	return 0;
 }	
