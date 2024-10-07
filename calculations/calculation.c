@@ -36,9 +36,9 @@ double power(double base, int exponent){
 double fact(int n){
 	double factorial = 1;
 	for(int i = 1; i <= n; i++){
-		result *= i;
+		factorial *= i;
 	}
-	return result;
+	return factorial;
 }
 
 //combination calc
